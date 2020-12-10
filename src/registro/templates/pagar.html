@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+  <div>
+    <div class="container jumbotron">
+      <div class="bg-img">
+
+        <H3 class="text">Confirma Tu Pago</h3>
+          
+      </div>
+
+
+      <div class="row">
+        <div class="column container">
+          <img src="" style="width:100">
+        </div>
+        <div class="column container" style="margin-bottom: 100px;">
+          <form method="POST">
+            {{ formulario.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Guardar" class="default" name="_save">
+        </form>
+
+            
+
+            </div>
+    
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="jumbotron text-center " style="margin-bottom:0">
+      <p>Green Apple© 2020|Contactanos GreenAppleStore@gmail.com/+56978489231 Chile LTDA</p>
+    </div>
+
+    {%endblock%}

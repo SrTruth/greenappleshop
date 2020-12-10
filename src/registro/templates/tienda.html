@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div>
+  <style>
+    .imgas {
+      width: 20%;
+
+    }
+  </style>
+  <div class="container ">
+    <div class="row">
+      <!-- Elementos generados a partir del JSON -->
+      <main id="items" class="col-sm-8 row"></main>
+      <!-- Carrito -->
+      <aside class="col-sm-4">
+        <h2>Carrito</h2>
+        <!-- Elementos del carrito -->
+        <ul id="carrito" class="list-group"></ul>
+        <hr>
+        <!-- Precio total -->
+        <p class="text-right">Total: $ <span id="total"></span></p>
+        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+
+
+        </script>
+        <p> <span id="total"></span></p>
+
+
+
+        {% if user.is_authenticated %}
+        <div>
+          
+            <a href="pagar.html" class="btn btn-success">Pagar </a>
+          
+        </div>
+        {% else %}
+        <div style="text-align:right; padding-right:10px;padding-top:5px">
+          {% if user.is_authenticated %}
+          {{user}} &nbsp;&nbsp;
+
+          {% endif %}
+          
+            <a href="{% url 'sesion.html' %}" style="margin-right: 59%;" class="btn btn-primary" role="">iniciar sesión</a>
+        </div>
+        
+    </div>
+    {% endif %}
+
+    <!-- <a href="pagar.html"  class="btn btn-success">Pagar </a> -->
+
+    <hr>
+
+
+
+    </aside>
+  </div>
+</div>
+
+
+</div>
+</div>
+{%endblock%}

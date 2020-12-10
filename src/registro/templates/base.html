@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Green Apple</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <!-- Latest compiled and minified CSS -->
+    <script src="{% static 'js/validar.js' %}"></script>
+  <script src="{% static 'js/calcular.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/bostrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font.css' %}">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <a class="navbar-brand funt" href="inicio.html" style="
+        font-family: cursive, sans-serif;  ">Green Apple</a>
+
+
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+                
+                <li class="nav-item">
+                    <a style="margin-left: 10%;" class="nav-link" href="tienda.html">Nuestra marca</a>
+                </li>
+
+
+            
+                <li class="nav-item">
+                    <a style="margin-left: 10%;" class="nav-link" href="cuenta.html">Crear Usuario</a>
+                </li>
+                <li>
+                    {% if user.is_authenticated %}
+                    <div  style="margin-left: 10%;">Bienvenido {{ user.username}}
+                        <li>
+                        <a style="margin-left: 10%;" class="nav-link" href="/logout">Cerrar Sesíon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="margin-left: 10%;" class="nav-link" href="action_page.html">Ver Pedidos</a>
+                    </li>
+                </div>
+                    {% else %}
+                    <div  style="text-align:right; padding-right:10px;padding-top:5px">
+                        {% if user.is_authenticated %}
+                            {{user}} &nbsp;&nbsp;
+                        
+                        {% endif %}
+                         <li>
+                        <a href="{% url 'sesion.html' %}" style="margin-left: 10%;" class="nav-link" role="">iniciar sesión</a></div>
+                    </li>
+                    </div>
+                    {% endif %}
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+   
+    {%block contenido %}
+
+
+
+    {%endblock%}
+
+    <div class="jumbotron text-center " style="margin-bottom:0">
+        <p>Green Apple© 2020|Contactanos GreenAppleStore@gmail.com/+56978489231 Chile LTDA</p>
+    </div>
+
+
+</body>
+
+</html>

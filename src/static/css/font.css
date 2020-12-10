@@ -1,0 +1,47 @@
+.funt{
+    font-family: cursive, sans-serif;
+    
+    }
+    body, html {
+        height: 80%;
+        width: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .bg-image {
+        /* Full height */
+        height: 75%;
+        width: 100%;
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      /* Images used */
+      .img1 { background-image: url("https://cdn.worldvectorlogo.com/logos/adidas-2.svg"); }
+      .img2 { background-image: url("https://plastin.shop/wp-content/uploads/2020/03/1409-65_1-1.jpg"); }
+      .img3 { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAboAAAByCAMAAAAS5eTaAAAAgVBMVEX///8AAADOzs6goKD39/fo6Ohvb2/h4eHe3t6urq7ExMQsLCympqYWFhYjIyNXV1cQEBCFhYWZmZkzMzO2trb4+PhWVlbt7e3T09NdXV16enppaWmNjY0/Pz8ICAiioqJGRkZNTU27u7smJiZjY2OJiYl0dHQ3NzcdHR1BQUF/f39VN7xoAAAEeklEQVR4nO3d6ZaaMAAF4ASDAuKGoyDigoM6+v4PWFBgogREyRi19/ulHtLG3hOzQgkBAAAAAAD4r+ge0a1HCrqt9kp2ZeAes+FmT/X7y61ozJRfH6jLShKgc8tjdxVz56dywR/VCm6arH5o6nDUJrXL6dNzoa8/rBtUWlHeum4SkzS5cf2wQbIBvTTe1Crmpw31gS4S5GjTgoFxu9i5f1yYaHPKGMXkKO3ZtxJhYXxZ17xvXANyzUXZ0blbXeorvibCb6VipjA7qlWVYWtKnWdVEEptQt8RtL1WRZG4pzs+rX5QLunYtsXsjuU9WUS76OZehS34zZyWxdPBRPwVaMfFku7bXVF/t++IywR0+txKgkBLPEhJfQv3ExilD+0zgEydyuTiGZ7oh9Ep/ymFp9HieLq7ZUV4xY0BY4mNnhfAFskEzW3lXV3oXGe39i6LuAvaR6N7Ae6onYxFJpso2frpjRjZFNqgzy+buCFm469G9yztlNGmOFoJ8qGmt6d0eWOVDJSxij3ecG4aLmPaaasHPd3r8oSzvEzVChmoxoLS4Ib1dmJBGcMfC5Nb1tiGBcVcaxv2izO+ys0geB1ux/OsFt/19TCneyt27zc7W3Vl4C5aflaTRjhJ9F5+5+l9HEl5MzMMVN6Vhin52wqz6HzVNYE75Yf+Zqpr8hkM7dpptcPN3rm/l3jJyHDiFQrk0n2560uyW7fcbHklVPRdP4zg/OSccS3k6/eH7iceGWqV68rjZOyo9a4/zlYts0NjB8wOZBDc7JEMI/josjt5ujqZrKuSo7Qd/4n94sfLc7tjaekFopNBFN2sNLpOoUVd+mbic0bpdEBDdBJl0S13fr7eUR6dkUcXcpm3D9mrPh/dtDiTCxCdPFkCQ514d0Q3IGSUXWITku0P8NFF+d2P3CT81LUuMSeXIY+uQ/Ssl6oRXZs7qW4Rko0d+ehGyXnL6+jcaRo8NPbk6Ehnn7zHiTAJnh1d+rfMcCassadHR9ipv8PDUhp7fnTnj7GO2ZiK6NgY65gSKImuS+lPyZ13UJuqVodm15iS6E5rmTjm0JCK6E5rKt9qvu8HURJd8kC4SM33/SBKomNLRNeckuiIdsAwpTFu58DI1v/lRLetiI64Gu4aaSrfrwtWYfYPfRXd9LHoprYdlUYHzdXYJX8wOh6i+wOi6LaI7h0Iojt0EN07yPu6rZMyk600CdGFjpM/FfoUnat5NyoD9+BGmDwJ0W2554cl0QW+2ZoiPHm4eR1P/rxuZX8dNyzChoE0t6JrEZIdm20UHRuQdrDQNeyOS3Mruv4qP5HXKLqOT3aDNdN3ir7nB7oVHadRdG5EdnufGHjiszQl0QkeFUUPrElf5xuBtdO2eISpNPmdPpfRMcEdQCb3/1HML6PL7v8ZctEdL6NzI1M3fBzAlMdqna2unmbCNq1Lq2Rc79rpuzguL33pJDP49LUdF3S4S9LXTjLzYOYowNQcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODSP5azR+kUqe0HAAAAAElFTkSuQmCC"); }
+      .img4 { background-image: url("https://images.squarespace-cdn.com/content/v1/58a2ec59bebafb516ad9ae74/1535735752770-JYG948TEG454COGZ1OA4/ke17ZwdGBToddI8pDm48kH0BRrkCSna_itMDJb1bUUp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iXS6XmVv7bUJ418E8Yoc1gzyCmLQOWRAG6JD6Exmudbz40Jqmj5sDHXOJpLhSyBZA/burberry_2.jpg"); }
+      .img5 { background-image: url("https://versionfinal.com.ve/wp-content/uploads/2017/03/Chanel-Logoversionfinal.jpg"); }
+      .img6 { background-image: url("https://tentulogo.com/wp-content/uploads/logo-lacoste.jpg"); }
+      
+    .pad{
+        
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .padd{
+    
+        padding-top:5% ;
+    }
+    .marag{
+
+margin-left: 145%;
+    }

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+{% load crispy_forms_tags %}
+
+        <div class="bg-img">
+          
+          <div class="column container" style="margin-bottom: 20px;" >
+            <form method="POST">
+              {{ form|crispy }}
+              {% csrf_token %}
+              <button type="submit">Login</button>
+          </form>
+          <a href="{% url 'social:begin' 'facebook' %}" class=" btn btn-primary">facebook</a>
+
+          
+          <hr />
+          
+          
+          
+
+    </form>
+    <tr class="model-user">
+            
+    
+
+    
+      <td><a href="cuenta.html" class="addlink">Registro</a></td>
+    
+
+    </tr>
+
+    </div>
+          </div>
+        
+          {%endblock%}

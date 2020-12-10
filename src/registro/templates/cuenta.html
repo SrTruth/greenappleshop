@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+{% load crispy_forms_tags %}
+    {% if messages %}
+		{% for message in messages %}
+		<div class="notification {{ message.tags}}">
+			{{ message }}
+		</div>
+		{% endfor %}
+	{% endif %}
+
+    <div class="bg-img">
+        
+    <div class="">
+        <div class="image-container">
+            <H3 class="text">Bienvenido</h3>
+          </div>
+        
+        
+        <div class="row">
+            <div class="column">
+                <img src="" style="width:100%">
+            </div>
+            <div class="column container" style="margin-bottom: 20px;" >
+                <form class="form" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        
+                    {{ form | crispy }}
+
+                    </table>
+                    
+                    <input type="reset" name="Limpiar">
+                    <input type="submit" name="Registrar" id="">
+                </form>
+                
+                <hr />
+                
+                <a href="sesion.html">Iniciar sesión</a>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    
+</div>
+{%endblock%}

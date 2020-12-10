@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tienda</title>
+  <meta name="description" content="">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="">
+  <script src="{% static 'java/validar.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/bostrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/font.css' %}">
+  <link rel="stylesheet" href=>
+  <link rel="stylesheet" href=>
+  <link rel="stylesheet" href=>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+  
+        <li>
+          <p>
+            Bienvenido <b>{{request.user.username}}</b> 
+         </li>
+      </p>
+    
+  <div>
+    <div class="container jumbotron">
+      <div class="bg-img">
+
+        <H3 class="text">Modificar Datos De Pedido</h3>
+          
+      </div>
+
+
+      <div class="row">
+        <div class="column container">
+          <img src="" style="width:100">
+        </div>
+        <div class="column container" style="margin-bottom: 100px;">
+          <form method="POST">
+            
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Modificar" class="default" name="_save">
+        </form>
+
+            
+
+            </div>
+    
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="jumbotron text-center " style="margin-bottom:0">
+      <p>Green Apple© 2020|Contactanos GreenAppleStore@gmail.com/+56978489231 Chile LTDA</p>
+    </div>
+
+</body>
+
+</html>
